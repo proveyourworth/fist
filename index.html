@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="pt-br" data-critters-container>
+  <head>
+    <!-- Versao da capa webmail Brasil Atz -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Terra Mail</title>
+    <meta name="description" content="Terra Mail Gigante, o maior E-mail da categoria. 20GB de espaco para armazenamento e muitas outras vantagens">
+    <meta name="keywords" content="Terra Mail Gigante, E-mail com antispam, E-mail com antivirus, E-mail com suporte, E-mail com suporte telefonico, E-mail protegido, E-mail com acesso seguro, email, webmail, antivirus, antispam">
+    <link rel="shortcut icon" type="image/x-icon" href="https://s1.trrsf.com.br/terramail/favicon.ico">
+
+	<link rel="icon" href="https://s1.trrsf.com.br/terramail/favicon.ico" type="image/x-icon">
+ 
+
+    <meta name="expires" content="never">
+    <meta name="revisit-after" content="30 days">
+    <meta name="robots" content="index,follow">
+    <meta name="distribution" content="Global">
+    <meta name="title" content="Terra Mail">
+    <meta name="rating" content="general">
+    <meta name="language" content="pt-br">
+    <meta http-equiv="content-language" content="portuguese">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="shortcut icon" type="image/x-icon" href="https://s1.trrsf.com.br/favicon.ico">
+    <!--<link rel="apple-touch-icon" href="_img/ico-bookmark.png" /> -->
+    <link rel="stylesheet" type="text/css" href="https://s1.trrsf.com.br/terramail/capa/terra/_css/core.css">
+    <link rel="stylesheet" type="text/css" href="https://s1.trrsf.com.br/terramail/capa/terra/_css/context2.css">
+    <link rel="stylesheet" type="text/css" href="https://s1.trrsf.com/fe/zaz-app-navbar/_css/navbar.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <style>
+      #trr-ctn-general {width : 970px!important; margin:auto; background-color:#ffffff;}
+      .col-right { width: 320px;}
+      .mod-login { width: 320px; height: 220px}
+      .adv-area {margin: 15px auto; width :300px;}
+    </style>
+    <!-- //PUBLICIDADE -->
+<!-- //PUBLICIDADE -->
+<script type="text/javascript" language="javascript">
+	var tgmKey = 'br.terra_mail.home';
+</script>
+ 
+<script type="text/javascript" src="https://s1.trrsf.com.br/terramail/_js/jquery-3.5.1.min.js"></script>
+ 
+<script src="//s1.trrsf.com/fe/zaz-cerebro/prd/scripts/zaz.inline.min.js?standalone=true?v=5"></script>
+<script type="text/javascript">
+		zaz.use(function(pkg){
+			'use strict';
+		   pkg.context.page.set('showBarraSVA', true);
+		   pkg.context.page.set('showBarraSVAMob', true);
+		   pkg.context.page.set("mediaService", false);
+
+
+	});
+</script> 
+
+<script type="text/javascript" src="https://s1.trrsf.com.br/terramail/_js/login_sync.js"> </script> 
+<script language="JavaScript" type="text/javascript">
+	function HypnoticDaisy(selector)
+	{
+		var daisy = {};
+
+		daisy.selector = selector;
+
+		daisy.show = function()
+		{
+			$(daisy.selector).css('position', 'relative');
+			$(daisy.selector).css('width', $(daisy.selector).width()+'px');
+			$(daisy.selector).css('height', $(daisy.selector).height()+'px');
+			$(daisy.selector).prepend('<div class="hypnotic-daisy-overlay" style="position: absolute; opacity: 0.5; width:100%; height: 100%; background-color: white;">');
+		}
+
+		return daisy;
+	}
+
+
+
+	var secondLogin = LoginClass
+	({
+		retry: 1,
+		retryTimeout: 1000,
+		url : "/mail/index.php",
+		authenticateAction : "?r=site/login&format=json",
+		csrfAction : "?r=site/csrf&format=json",
+		captcha : { public_key :"b135776fa1c8ee3ed906d983e60d5b054a91bbd0" ,lang : 'pt' },
+		gCaptchaActive: false,
+		gCaptchaKey: '6LfT4LIUAAAAAIx_fIW6iyAnWFm8jCTIF9tdr5gK',
+		showCaptchaCallback : function(data,captcha)
+		{
+			showErrorMessage(data.message);
+			console.log(captcha);
+			BrandCaptcha.initAsync(captcha.public_key, "id_captcha",{'lang':captcha.lang});
+		},
+		onLoading : function(data)
+		{
+			clearErrorMessage();
+
+			var daisy = HypnoticDaisy('.mod-login');
+			daisy.show();
+		},
+		onAnyError: function(data)
+		{
+			$('.mod-login .hypnotic-daisy-overlay').remove();
+		},
+		onAuthenticationError: function(data) 
+		{
+			showErrorMessage(data.message);
+		},
+		onSystemError: function(data)
+		{
+			if( (typeof data == "object") && data.message != undefined)
+				showErrorMessage(data.message);
+			else
+				showErrorMessage("Sistema temporariamente indispon&iacute;vel");
+		},
+		onServerError: function(data)
+		{
+			showErrorMessage("Sistema temporariamente indispon&iacute;vel");
+		}
+	});
+	
+</script>
+<link rel="stylesheet" type="text/css" href="https://t1.trrsf.com.br/themes/mobile/css/bootstrap.no-icons.min.css?1657805994">		<link rel="stylesheet" type="text/css" href="https://t1.trrsf.com.br/themes/mobile/css/font-awesome.min.css?1657805994">		<link rel="stylesheet" type="text/css" href="https://t1.trrsf.com.br/themes/mobile/css/bootstrap-modal.css?1657805994">		<link rel="stylesheet" type="text/css" href="https://t1.trrsf.com.br/themes/mobile/css/select2.css?1657805994">		<link rel="stylesheet" type="text/css" href="https://t1.trrsf.com.br/themes/mobile/css/main.css?1657805994">																							
+<script type="text/javascript">
+new Image().src = 'https://t1.trrsf.com.br/themes/mobile/images/ajax-loader.gif?1657805994';
+function callMetricsCode() {
+	terra_stats_regTraffic({
+		service: "PubBR",
+		category: "comunidades",
+		channel: "br.comunidad.email",
+		channeldetail: "home_webmail",
+		type: "SRV",
+		id: "home",
+		idCrtfc: 510561,
+		regSttWb: 0,
+		classification: "m.terra",
+		phnt: "Smartphone"
+	});
+}
+			//-->
+</script>
+ 
+
+<meta name="google-site-verification" content="Ucd00_lyei7eaNyVr9fPb7jFEFQ31bfVKsQFX0slnVI">
+  <link rel="stylesheet" href="styles-5INURTSO.css"></head>
+<body>
+	<!-- HEADER para dispositivos não móveis -->
+	<script>
+	  if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+		window.trr = {
+		  contextData: {
+			device: 'web',
+			lang: 'pt',
+			country: 'br'
+		  }
+		};
+		document.write('<script type="text/javascript" src="https://s1.trrsf.com/fe/zaz-mod-manager/mod-manager.min.js"><\/script>');
+		document.write('<script type="text/javascript" src="https://p1.trrsf.com/cengine/igniter/script?s=navbar&r=ad&r=breadcrumb&r=breakingNews&r=cookie-message&r=footer&r=navbar-email&r=search&r=ticker&r=socialpanel&r=shortcuts&r=under18-message&rs=email&p=fixed"><\/script>');
+	  }
+	</script>
+  
+	<!-- HEADER para dispositivos móveis -->
+	<div class="container-fluid">
+	  <!-- Top navbar -->
+	  <div class="navbar navbar-fixed-top" style="height:15px; ">
+		<script>
+		  window.trr = {
+			contextData: {
+			  device: 'mob',
+			  lang: 'pt',
+			  country: 'br',
+			  locale: 'pt-BR'
+			}
+		  };
+		</script>
+		
+		<script>
+		  zaz.use(function TerraIgniter(pkg) {
+			pkg.require(["app.navbar"], function (NavBar) {
+			  var rejected = ["breadcrumb", "breakingNews", "ad"],
+				rejectedShortcuts = [],
+				navBar = new NavBar({
+				  shortcuts: {
+					reject: rejectedShortcuts
+				  },
+				  reject: rejected
+				});
+			  if (window.contacts === undefined) {
+				pkg.context.page.set('showBarraSVA', true);
+				pkg.context.page.set('showBarraSVAMob', true);
+				pkg.context.page.set("mediaService", false);
+			  }
+			});
+		  });
+		</script>
+	  </div>
+	 
+	</div>
+ 
+  
+
+
+  <app-root></app-root>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+<script src="polyfills-LZBJRJJE.js" type="module"></script><script src="main-BRUULNFU.js" type="module"></script></body>
+</html>
